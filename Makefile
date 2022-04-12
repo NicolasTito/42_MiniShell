@@ -6,7 +6,7 @@
 #    By: nide-mel <nide-mel@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/06 16:03:32 by nide-mel          #+#    #+#              #
-#    Updated: 2022/03/07 17:06:17 by nide-mel         ###   ########.fr        #
+#    Updated: 2022/04/12 16:25:25 by nide-mel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,6 +37,7 @@ OBJ_PATH_BONUS = ./obj_bonus
 SRC_NAME =	main.c\
 			utils/utils.c\
 			utils/utils_env.c\
+			utils/free_program.c\
 
 SRC_NAME_BONUS =
 

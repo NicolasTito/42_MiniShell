@@ -1,34 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ms_struct.h                                        :+:      :+:    :+:   */
+/*   free_program.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nide-mel <nide-mel@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/07 15:58:06 by nide-mel          #+#    #+#             */
-/*   Updated: 2022/04/12 16:14:29 by nide-mel         ###   ########.fr       */
+/*   Created: 2022/04/12 16:25:28 by nide-mel          #+#    #+#             */
+/*   Updated: 2022/04/12 16:32:10 by nide-mel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MS_STRUCT_H
-# define MS_STRUCT_H
+#include "minishell.h"
 
-# include "minishell.h"
-
-typedef struct s_env {
-	char			*key;
-	char			*content;
-	struct s_env	*next;
-}					t_env;
-
-typedef struct s_lexer
+void	free_lexer()
 {
-	char			*command;
-}					t_lexer;
 
-typedef struct s_data {
-	int				status;
-	char			**token;
-	t_env			*env;
-}					t_data;
-#endif
+}
+
+void	free_env(t_env	**env)
+{
+	t_env	*aux;
+
+	while (*env && env)
+	{
+		aux = (*env)->next;
+		free((*env)->content);
+		free((*env)->key);
+		free((*env));
+		(*env) = aux;
+	}
+}
