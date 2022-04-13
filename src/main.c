@@ -6,7 +6,7 @@
 /*   By: nide-mel <nide-mel@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/07 15:51:19 by nide-mel          #+#    #+#             */
-/*   Updated: 2022/04/13 18:17:56 by nide-mel         ###   ########.fr       */
+/*   Updated: 2022/04/13 18:44:23 by nide-mel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,15 @@ static char	**read_command(void)
 	}
 	if (command[0])
 		add_history(command);
-	token = str_token(command);
+	token = ft_split(command, ' ');
 	if (!token)
 		return (NULL);
+	if (!ft_strncmp(token[0], "exit", 5))
+	{
+		free(command);
+		printf("exit\n");
+		return (NULL);
+	}
 	free(command);
 	return (token);
 }
