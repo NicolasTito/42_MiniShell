@@ -6,7 +6,7 @@
 #    By: nide-mel <nide-mel@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/06 16:03:32 by nide-mel          #+#    #+#              #
-#    Updated: 2022/04/12 16:25:25 by nide-mel         ###   ########.fr        #
+#    Updated: 2022/04/13 18:15:55 by nide-mel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,6 +38,7 @@ SRC_NAME =	main.c\
 			utils/utils.c\
 			utils/utils_env.c\
 			utils/free_program.c\
+			lexer/string_token.c\
 
 SRC_NAME_BONUS =
 

@@ -6,16 +6,11 @@
 /*   By: nide-mel <nide-mel@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/12 16:25:28 by nide-mel          #+#    #+#             */
-/*   Updated: 2022/04/12 16:32:10 by nide-mel         ###   ########.fr       */
+/*   Updated: 2022/04/12 16:35:13 by nide-mel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minishell.h"
-
-void	free_lexer()
-{
-
-}
 
 void	free_env(t_env	**env)
 {
