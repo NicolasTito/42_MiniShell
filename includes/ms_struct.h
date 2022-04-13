@@ -6,7 +6,7 @@
 /*   By: nide-mel <nide-mel@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/07 15:58:06 by nide-mel          #+#    #+#             */
-/*   Updated: 2022/04/12 16:14:29 by nide-mel         ###   ########.fr       */
+/*   Updated: 2022/04/13 18:49:59 by nide-mel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ typedef struct s_env {
 
 typedef struct s_lexer
 {
-	char			*command;
+	char			**token;
 }					t_lexer;
 
 typedef struct s_data {

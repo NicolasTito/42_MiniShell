@@ -6,7 +6,7 @@
 /*   By: nide-mel <nide-mel@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/13 18:16:27 by nide-mel          #+#    #+#             */
-/*   Updated: 2022/04/13 18:29:41 by nide-mel         ###   ########.fr       */
+/*   Updated: 2022/04/13 18:45:54 by nide-mel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 * (also works inside double quotes,
 * but inside single quotes it uses what was written)
 \******************************************************************************/
-// char	**str_token(char *command)
-// {
+char	**str_token(char *command)
+{
 
-// }
+}
