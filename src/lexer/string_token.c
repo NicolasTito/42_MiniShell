@@ -6,11 +6,11 @@
 /*   By: nide-mel <nide-mel@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/13 18:16:27 by nide-mel          #+#    #+#             */
-/*   Updated: 2022/05/16 17:32:16 by nide-mel         ###   ########.fr       */
+/*   Updated: 2022/05/19 16:04:35 by nide-mel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
+#include "minishell.h"~
 
 /******************************************************************************\
 * reads an array and separates it into tokens, separated by spaces
